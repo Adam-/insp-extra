@@ -1,5 +1,10 @@
-C:\Users\Adam\Desktop\insp-extra\GeoIP-1.4.7\include;C:\Users\Adam\Desktop\insp-extra\mysql-server-5.1\include\mysql;C:\Users\Adam\Desktop\insp-extra\openldap-2.4.23\include;C:\Users\Adam\Desktop\insp-extra\openssl-1.0.1\include;C:\Users\Adam\Desktop\insp-extra\pcre-8.12\include;C:\Users\Adam\Desktop\insp-extra\sqlite-3.7.9\include;C:\Users\Adam\Desktop\insp-extra\gnutls-3.0.21\include;C:\Users\Adam\Desktop\insp-extra\libgcrypt-1.5.0\include
-C:\Users\Adam\Desktop\insp-extra\GeoIP-1.4.7\lib;C:\Users\Adam\Desktop\insp-extra\mingw\lib;C:\Users\Adam\Desktop\insp-extra\mysql-server-5.1\lib;C:\Users\Adam\Desktop\insp-extra\openldap-2.4.23\lib;C:\Users\Adam\Desktop\insp-extra\openssl-1.0.1\lib;C:\Users\Adam\Desktop\insp-extra\pcre-8.12\lib;C:\Users\Adam\Desktop\insp-extra\sqlite-3.7.9\lib;C:\Users\Adam\Desktop\insp-extra\gnutls-3.0.21\lib;C:\Users\Adam\Desktop\insp-extra\libgcrypt-1.5.0\lib
+C:\insp-extra\GeoIP-1.4.7\include;C:\insp-extra\mysql-server-5.1\include\mysql;C:\insp-extra\openldap-2.4.23\include;C:\insp-extra\openssl-1.0.1\include;C:\insp-extra\pcre-8.12\include;C:\insp-extra\sqlite-3.7.9\include;C:\insp-extra\gnutls-3.0.21\include;C:\insp-extra\libgcrypt-1.5.0\include
+C:\insp-extra\GeoIP-1.4.7\lib;C:\insp-extra\mingw\lib;C:\insp-extra\mysql-server-5.1\lib;C:\insp-extra\openldap-2.4.23\lib;C:\insp-extra\openssl-1.0.1\lib;C:\insp-extra\pcre-8.12\lib;C:\insp-extra\sqlite-3.7.9\lib;C:\insp-extra\gnutls-3.0.21\lib;C:\insp-extra\libgcrypt-1.5.0\lib
+
+cmake -G "Visual Studio 10" -DEXTRA_INCLUDES:STRING="C:\insp-extra\GeoIP-1.4.7\include;C:\insp-extra\mysql-server-5.1\include\mysql;C:\insp-extra\openldap-2.4.23\include;C:\insp-extra\openssl-1.0.1\include;C:\insp-extra\pcre-8.12\include;C:\insp-extra\sqlite-3.7.9\include;C:\insp-extra\gnutls-3.0.21\include;C:\insp-extra\libgcrypt-1.5.0\include" -DEXTRA_LIBS:STRING="C:\insp-extra\GeoIP-1.4.7\lib;C:\insp-extra\mingw\lib;C:\insp-extra\mysql-server-5.1\lib;C:\insp-extra\openldap-2.4.23\lib;C:\insp-extra\openssl-1.0.1\lib;C:\insp-extra\pcre-8.12\lib;C:\insp-extra\sqlite-3.7.9\lib;C:\insp-extra\gnutls-3.0.21\lib;C:\insp-extra\libgcrypt-1.5.0\lib" ..
+
+To fix the gnutls library to not give weird missing symbol errors at runtime:
+lib /machine:i386 /def:file.def
 
 GNUTLS:
 libgmp
